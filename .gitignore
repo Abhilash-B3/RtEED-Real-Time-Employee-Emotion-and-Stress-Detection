@@ -1,0 +1,24 @@
+
+# Python
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Node
+node_modules/
+dist/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive / Large Files
+.env.local
+*.mp4
+*.hdf5
+

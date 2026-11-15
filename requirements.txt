@@ -1,0 +1,41 @@
+# RtEED – Project Requirements & Environment Setup
+
+# --- 1. Python Backend Dependencies ---
+# These are required to run the FastAPI server and the CV pipeline.
+# Install via: pip install -r backend/requirements.txt
+
+fastapi==0.104.1            # Web framework for the analysis API
+uvicorn==0.24.0             # ASGI server for FastAPI
+python-multipart==0.0.6     # Support for form-data (image uploads)
+opencv-python-headless==4.8.1.78  # Computer Vision processing
+scikit-image==0.22.0        # Gabor filter bank implementation
+scipy==1.11.3               # N-dimensional image convolution
+numpy==1.26.1               # Numerical operations for image arrays
+
+# --- 2. Frontend Dependencies ---
+# Managed via npm/yarn. See package.json.
+# Key libraries:
+# - react @19.2.4
+# - react-router-dom @7.13.0
+# - recharts @3.7.0 (Data visualization)
+# - @google/genai (Gemini AI Insights)
+# - lucide-react (Iconography)
+
+# --- 3. Pre-trained Models ---
+# The system utilizes OpenCV's built-in Haar Cascade classifiers.
+# No manual download is required if opencv-python is installed.
+# Models used:
+# - haarcascade_frontalface_default.xml
+# - haarcascade_eye.xml
+
+# --- 4. Research Datasets (Documentation) ---
+# The logic and Gabor parameters are inspired by research on:
+# - FER-2013 (Facial Expression Recognition 2013)
+#   Source: https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge-dataset
+# - CK+ (Extended Cohn-Kanade Dataset)
+#   Source: http://www.pitt.edu/~emotion/ck-spread.htm
+
+# --- 5. External APIs ---
+# - Google Gemini API: Used for generating executive wellness summaries 
+#   based on processed employee emotion trends.
+#   Requirement: process.env.API_KEY must be configured.

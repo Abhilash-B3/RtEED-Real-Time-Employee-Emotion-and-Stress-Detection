@@ -1,0 +1,8 @@
+{
+  "name": "RtEED – Real-Time Employee Emotion and Stress Detection",
+  "description": "A real-time system that analyzes facial expressions via webcam to monitor employee emotion and stress levels, providing actionable insights for workplace well-being.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

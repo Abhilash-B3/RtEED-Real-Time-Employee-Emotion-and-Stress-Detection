@@ -1,0 +1,36 @@
+# --- RtEED Backend Dependencies ---
+
+# 1. Web Framework & Server
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+
+# 2. Computer Vision & Image Processing
+# Headless version is preferred for servers/docker to reduce size
+opencv-python-headless==4.8.1.78
+# Scikit-image provides the Gabor filter bank kernels
+scikit-image==0.22.0
+# SciPy handles high-performance N-dimensional image convolutions
+scipy==1.11.3
+
+# 3. Numerical Operations
+# NumPy is the backbone for frame-to-array transformations
+numpy==1.26.1
+
+# 4. Utilities (Optional but recommended for setup)
+# For downloading additional weights/datasets if needed
+requests==2.31.0
+
+# --- RESEARCH MODELS & DATASETS (Documentation) ---
+# Note: Haar Cascades are included with opencv-python.
+# For Deep Learning upgrades (FER-2013 / CK+ Logic):
+# To use the full CNN model mentioned in README, add:
+# # Deep Learning upgrades (FER-2013 / CK+ Logic):
+tensorflow
+
+# --- Authentication & Database ---
+motor==3.3.2
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.6
+email-validator==2.1.0.post1

@@ -1,0 +1,9 @@
+--- Detection Results ---
+Emotion: Happy
+Confidence: 0.51
+Stress Level: Low
+Stress Score: 0.05
+Pipeline Status: Success
+-------------------------
+
+✅ Verification SUCCESS: Backend returned valid analysis.
